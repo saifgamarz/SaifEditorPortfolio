@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saif - Professional Video Editor Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .skill-bar {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .stats-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .contact-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: all 0.3s ease;
+        }
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-8">
+                <div class="w-32 h-32 bg-white rounded-full mx-auto mb-6 flex items-center justify-center">
+                    <i class="fas fa-video text-6xl text-purple-600"></i>
+                </div>
+                <h1 class="text-5xl font-bold mb-4">Saif</h1>
+                <p class="text-xl mb-6">Professional Video Editor</p>
+                <p class="text-lg max-w-2xl mx-auto mb-8">Transforming raw footage into compelling stories that captivate audiences across YouTube, Instagram, and beyond</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="mailto:imshif93@gmail.com" class="contact-btn text-white px-8 py-3 rounded-full font-semibold hover:text-white">
+                        <i class="fas fa-envelope mr-2"></i>Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Work Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Featured Work</h2>
+                <p class="text-xl text-gray-600">Viral content that reached millions of viewers</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <!-- YouTube Short -->
+                <div class="card-shadow rounded-lg overflow-hidden bg-white">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/F1Ou2gVzq4k" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fab fa-youtube text-red-500 text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">YouTube Short</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Elvish Ka Full Roast - Entertainment content with dynamic editing and engaging transitions</p>
+                        <div class="flex items-center space-x-6">
+                            <div class="text-center">
+                                <p class="stats-number text-2xl font-bold">9.5M+</p>
+                                <p class="text-sm text-gray-500">Views</p>
+                            </div>
+                            <div class="text-center">
+                                <p class="stats-number text-2xl font-bold">1K+</p>
+                                <p class="text-sm text-gray-500">Comments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instagram Reel -->
+                <div class="card-shadow rounded-lg overflow-hidden bg-white">
+                    <div class="aspect-w-9 aspect-h-16 bg-gray-100 flex items-center justify-center">
+                        <a href="https://www.instagram.com/reel/C89bkJZyRVf/?igsh=MWhodWQ4OGptbTEwbQ==" target="_blank" class="text-center">
+                            <i class="fab fa-instagram text-pink-500 text-8xl mb-4"></i>
+                            <p class="text-gray-600">View on Instagram</p>
+                        </a>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fab fa-instagram text-pink-500 text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Instagram Reel</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Podcast highlights with emotional storytelling and professional audio sync</p>
+                        <div class="flex items-center space-x-6">
+                            <div class="text-center">
+                                <p class="stats-number text-2xl font-bold">6.3M+</p>
+                                <p class="text-sm text-gray-500">Likes</p>
+                            </div>
+                            <div class="text-center">
+                                <p class="stats-number text-2xl font-bold">Viral</p>
+                                <p class="text-sm text-gray-500">Reach</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Overview -->
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="bg-white p-6 rounded-lg card-shadow">
+                    <p class="stats-number text-4xl font-bold">15M+</p>
+                    <p class="text-gray-600">Total Views</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg card-shadow">
+                    <p class="stats-number text-4xl font-bold">6M+</p>
+                    <p class="text-gray-600">Total Likes</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg card-shadow">
+                    <p class="stats-number text-4xl font-bold">100+</p>
+                    <p class="text-gray-600">Projects Done</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg card-shadow">
+                    <p class="stats-number text-4xl font-bold">50+</p>
+                    <p class="text-gray-600">Happy Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Tools & Expertise</h2>
+                <p class="text-xl text-gray-600">Mastering the art of video editing with industry-leading software</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-lg card-shadow text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-paint-brush text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Canva</h3>
+                    <p class="text-gray-600">Professional graphics and thumbnails</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg card-shadow text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-cut text-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">CapCut</h3>
+                    <p class="text-gray-600">Mobile-first video editing</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg card-shadow text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-video text-purple-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">VN</h3>
+                    <p class="text-gray-600">Advanced mobile editing</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg card-shadow text-center">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-film text-red-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">InShot</h3>
+                    <p class="text-gray-600">Quick and efficient editing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Services</h2>
+                <p class="text-xl text-gray-600">Comprehensive video editing solutions for all your content needs</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-8 rounded-lg card-shadow">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fab fa-youtube text-red-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">YouTube Content</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Long-form videos</li>
+                        <li>• YouTube Shorts</li>
+                        <li>• Thumbnails & Graphics</li>
+                        <li>• Intro/Outro animations</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-lg card-shadow">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fab fa-instagram text-pink-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Instagram Content</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Instagram Reels</li>
+                        <li>• Stories & Highlights</li>
+                        <li>• IGTV videos</li>
+                        <li>• Promotional content</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-lg card-shadow">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-video text-purple-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Cinematic Edits</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Color grading</li>
+                        <li>• Sound design</li>
+                        <li>• Visual effects</li>
+                        <li>• Storytelling</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-lg card-shadow">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bullhorn text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Promotional Ads</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Brand commercials</li>
+                        <li>• Product demos</li>
+                        <li>• Social media ads</li>
+                        <li>• Call-to-action videos</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-lg card-shadow">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-blog text-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Vlog Content</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Daily vlogs</li>
+                        <li>• Travel videos</li>
+                        <li>• Lifestyle content</li>
+                        <li>• Personal branding</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-lg card-shadow">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-yellow-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Custom Projects</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Event highlights</li>
+                        <li>• Educational content</li>
+                        <li>• Music videos</li>
+                        <li>• Corporate videos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Clients Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Who I Work With</h2>
+                <p class="text-xl text-gray-600">Serving diverse clients across industries and platforms</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg card-shadow text-center">
+                    <i class="fas fa-star text-yellow-500 text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Influencers</h3>
+                    <p class="text-gray-600">Content creators building their personal brand</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg card-shadow text-center">
+                    <i class="fas fa-building text-blue-500 text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Small Businesses</h3>
+                    <p class="text-gray-600">Local businesses expanding their digital presence</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg card-shadow text-center">
+                    <i class="fab fa-youtube text-red-500 text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">YouTubers</h3>
+                    <p class="text-gray-600">YouTube creators of all sizes and niches</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg card-shadow text-center">
+                    <i class="fas fa-rocket text-purple-500 text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Startups</h3>
+                    <p class="text-gray-600">Emerging companies needing video marketing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">What Clients Say</h2>
+                <p class="text-xl text-gray-600">Real feedback from satisfied clients</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg card-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Saif's editing skills are outstanding! My YouTube channel grew 300% after working with him. His attention to detail and creative vision are unmatched."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Content Creator</p>
+                            <p class="text-sm text-gray-500">YouTube Partner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg card-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Professional, reliable, and incredibly talented. Our Instagram engagement increased by 500% with Saif's viral-worthy reels."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Social Media Manager</p>
+                            <p class="text-sm text-gray-500">Fashion Brand</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg card-shadow">
+                    <div class="flex items-center mb-4">
+           
